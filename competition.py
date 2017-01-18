@@ -22,7 +22,7 @@ plt.show()
 
 #Printing out the model score.
 score = y_reg.score(x_values,y_values)
-print "The model has a score of %r" %score
+print "The model has a score of %f" %score
 
 #calculating pointwise error
 error =  y_values.as_matrix() - y_predict
@@ -30,7 +30,7 @@ abs_error = abs(y_values.as_matrix() - y_predict)
 
 #calculating the average error of model.
 ave_error_total = np.mean(abs_error)
-print "The average error of the model is %r" % ave_error_total
+print "The average error of the model is %f" % ave_error_total
 
 #Visualize the pointwise error.
 plt.scatter(x_values,error)
