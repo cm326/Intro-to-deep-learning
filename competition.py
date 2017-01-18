@@ -3,7 +3,6 @@ from sklearn import linear_model
 import matplotlib.pyplot as plt
 from matplotlib import style
 import numpy as np
-import math
 style.use('ggplot')
 
 #Reading the data.
